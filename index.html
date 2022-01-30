@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Website Design </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header"> 
+       <nav>
+           <img src="pics/logo.jpg" class="logo" height="100" width="200">
+           <ul>
+               <li><a href="#" id="Z900">Z900</a></li>
+               <li><a href="#" id="ZX10R">ZX10R</a></li>
+               <li><a href="#" id="H2R">H2R</a></li>
+           </ul>
+           <a href="#" class="btn">Reserve Now</a>    
+       </nav> 
+       
+       <div class="info">
+           <div>
+               <h2>3.45 s</h2>
+               <p>100 kmph</p>
+           </div>
+           <div>
+              <h2>255 kmph</h2>
+              <p>Top Speed</p>
+        </div> 
+        <div>
+            <h2>18 kmpl</h2>
+            <p>Fuel Range</p>
+        </div>  
+        <div class="line">       
+       </div>  
+       <div>
+           <h2 id="model">Z900</h2>
+       </div>   
+
+    </div>
+<script>  
+
+        var header = document.getElementById("header");
+        var z9 = document.getElementById("Z900");
+        var z10 = document.getElementById("ZX10R");
+        var hr = document.getElementById("H2R");
+        var model = document.getElementById("model");
+
+        z9.onclick = function(){
+            header.style.backgroundImage = "url(pics/z900.jpg)";
+            model.innerHTML = "Z900";
+        }
+        z10.onclick = function(){
+            header.style.backgroundImage = "url(pics/zx10r.jpg)";
+            model.innerHTML = "ZX10R";
+        }
+        hr.onclick = function(){
+            header.style.backgroundImage = "url(pics/h2r.jpg)";
+            model.innerHTML = "H2R";
+        }
+
+</script>    
+</body>
+</html>
